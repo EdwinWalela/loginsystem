@@ -51,7 +51,7 @@ app.post('/register',urlencodedParser,function(req,res){
       data.save().then(function(){
         res.json(`successfuly added ${data.username} to database!`)
       }).catch(function(err){
-        res.json('failed to add user to database',err);
+        res.json('failed to add user to the database',err);
       })
     }
   })
