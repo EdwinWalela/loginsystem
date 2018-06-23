@@ -58,7 +58,10 @@ form{
   margin: 2em;
   color: #fff;
 }
-
+#error{
+  color:tomato;
+  font-size: 0.8em;
+}
 ul{
   list-style: none;
 }

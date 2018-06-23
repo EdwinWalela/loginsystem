@@ -49,7 +49,7 @@ app.post('/register',urlencodedParser,function(req,res){
       res.json('username already exists')
     }else{
       data.save().then(function(){
-        res.json(`successfuly added ${data.username} to database!`)
+        res.render('regsucess')
       }).catch(function(err){
         res.json('failed to add user to the database',err);
       })
@@ -65,11 +65,11 @@ app.post('/login',urlencodedParser,function(req,res){
         res.render('profile',{user:result})
       }else{
         //--- render fail page
-        res.json('incorrect details')
+        res.render('incorrect')
       }
     }else{
       //--- render not found
-      res.json('not found')
+      res.render('nouser')
     }
   })
 })
