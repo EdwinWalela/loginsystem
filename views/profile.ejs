@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    body{
+      margin: 3em;
+      }</style>
+    <link href='/assets/style.css' rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="profhead">My Profile</h1>
+    <ul>
+      <li>name: <%=user.fname%> <%=user.lname%></li>
+      <li>phone number: <%=user.mobile%></li>
+      <li>email:<%=user.email%></li>
+      <li>Birthday: <%=user.dob.getDate()%>-<%=user.dob.getMonth()+1%>-<%=user.dob.getFullYear()%></li>
+    </ul>
+  </body>
+</html>

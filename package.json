@@ -1,0 +1,23 @@
+{
+  "name": "loginsystem",
+  "version": "1.0.0",
+  "description": "user login system (Mongo+Node)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon index.js"
+  },
+  "author": "edwin walela",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "*",
+    "mongoose": "*",
+    "nodemon": "^1.17.5"
+  },
+  "engines": {
+    "node": "8.9.4",
+    "npm": "5.6.0"
+  }
+}
