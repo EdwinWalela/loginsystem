@@ -70,3 +70,9 @@ li{
   margin: 2em;
   text-align: left;
 }
+
+#logout{
+  width: 100px;
+  height: 2em;
+  border: none;
+}
