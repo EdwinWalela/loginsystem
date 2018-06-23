@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 var urlencodedParser = bodyParser.urlencoded({extended:false})
 var app = express();
-var port = process.env.port || 3000;
+var port = process.env.PORT || 3000;
 
 // --- Models --- //
 const User = require('./models/user');
