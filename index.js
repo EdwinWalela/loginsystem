@@ -10,7 +10,7 @@ var port = process.env.PORT || 3000;
 const User = require('./models/user');
 
 // open connection to mongo
-mongoose.connect('mongodb://walela:nokian72@ds161700.mlab.com:61700/loginwalela');
+mongoose.connect('mongodb://walela:-@ds161700.mlab.com:61700/loginwalela');
 mongoose.connection.once('open',function(){
   console.log('db connection success!')
 }).on('error',function(err){
